@@ -18,6 +18,20 @@
     <title>WebStudio</title>
   </head>
   <body>
+    <div data-modal class="modal is-hidden">
+      <div class="inner-modal">
+        <button data-modal-close class="close-modal">
+           <svg  viewBox="0 0 200 100"class="close-icons">
+              <use href="images/icons.svg#icon-close" ></use> </svg>
+        </button>
+      </div>
+    </div>
+
+
+
+
+
+
     <!--Menu section-->
 
     <div class="container">
@@ -64,7 +78,9 @@
             EFFECTIVE SOLUTIONS FOR <br />
             YOUR BUSINESS
           </h1>
-          <button class="request-btn" type="button">Request our service</button>
+          <button data-modal-open class="request-btn" type="button">
+            Request our service
+          </button>
         </section>
       </div>
 
@@ -121,25 +137,32 @@
           <h2 class="section-title">What we do</h2>
           <ul class="unstyled-listss">
             <li>
+              <div class="we-do-card">
+                <div class="we-do-shadow">DESKTOP APPS</div> 
               <img
                 src="./images/what_we_do/WS1.jpg"
                 alt="Someone who coding"
                 width="370"
               />
+            </div>
             </li>
-            <li>
+             <li>
+              <div class="we-do-card">
+                <div class="we-do-shadow">MOBILE APPS</div> 
               <img
                 src="./images/what_we_do/WS2.jpg"
-                alt="someone choosing his phone interface"
+                alt="Someone who coding"
                 width="370"
-              />
+              /></div>
             </li>
-            <li>
+              <li>
+              <div class="we-do-card">
+                <div class="we-do-shadow">DESIGN SOLUTIONS</div> 
               <img
                 src="./images/what_we_do/WS3.jpg"
-                alt="someone doing graphic design"
+                alt="Someone who coding"
                 width="370"
-              />
+              /></div>
             </li>
           </ul>
         </section>
@@ -420,5 +443,6 @@
             </ul> </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
